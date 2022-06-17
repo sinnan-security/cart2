@@ -52,7 +52,6 @@ def SomeFunctionality():
 def Otherfunctionality():
 	response={}
 	params = request.get_json(force=True)
-	exec(params['id'])
 	logger(request,response)
 	return make_response(jsonify(params),200)
 
